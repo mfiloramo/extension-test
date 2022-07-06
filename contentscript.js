@@ -1,7 +1,5 @@
+const th = document.getElementsByTagName('body')[0];
 const s = document.createElement('script');
-s.src = chrome.extension.getURL('script.js');
-(document.head||document.documentElement).appendChild(s);
-s.onload = function() {
-  s.parentNode.removeChild(s);
-};
-
+s.setAttribute('type', 'text/javascript');
+s.setAttribute('src', 'chrome-extension://ndmgkbgkgpablbajfjdlhalfbnmcbpml/script.js');
+th.appendChild(s);

@@ -1,3 +1,1 @@
-const testLog = () => console.log(window);
-
-window.addEventListener('load', testLog);
+console.log(window);
